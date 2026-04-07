@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NIDS Final Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div hidden aria-hidden="true" data-easter-egg="Project by Siddhant Singh, CSE 28"></div>
+  <div class="page-shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Real-time Packet Monitoring System</p>
+        <h1 id="dashboard-title" title="There may be more here than it seems.">NIDS Dashboard</h1>
+        <p class="hero-copy">
+          Beginner-friendly network intrusion detection with Scapy capture, simple rule-based analysis,
+          REST APIs, and a live dashboard for safe vs suspicious traffic.
+        </p>
+      </div>
+      <div class="control-panel">
+        <div class="control-row">
+          <label for="mode-select">Capture mode</label>
+          <select id="mode-select">
+            <option value="live">Live network</option>
+          </select>
+        </div>
+        <div class="control-row">
+          <label for="interface-select">Network interface</label>
+          <select id="interface-select">
+            <option value="">Loading interfaces...</option>
+          </select>
+        </div>
+        <div class="control-row">
+          <label for="packet-limit">Packet limit</label>
+          <input id="packet-limit" type="number" min="1" max="5000" value="50">
+        </div>
+        <div class="button-row">
+          <button id="start-btn">Start Capture</button>
+          <button id="stop-btn" class="secondary">Stop</button>
+          <button id="reset-btn" class="ghost">Reset</button>
+        </div>
+        <p id="status-text" class="status-text">Idle</p>
+      </div>
+    </header>
+
+    <section class="stats-grid">
+      <article class="stat-card">
+        <span>Total Packets</span>
+        <strong id="total-count">0</strong>
+      </article>
+      <article class="stat-card">
+        <span>Safe Packets</span>
+        <strong id="safe-count">0</strong>
+      </article>
+      <article class="stat-card alert">
+        <span>Suspicious Packets</span>
+        <strong id="suspicious-count">0</strong>
+      </article>
+    </section>
+
+    <section class="content-grid">
+      <article class="chart-card">
+        <div class="section-heading">
+          <h2>Traffic Split</h2>
+          <p>Safe vs suspicious packets</p>
+        </div>
+        <div class="bar-chart">
+          <div>
+            <div class="bar-label">
+              <span>Safe</span>
+              <span id="safe-percent">0%</span>
+            </div>
+            <div class="bar-track"><div id="safe-bar" class="bar safe-bar"></div></div>
+          </div>
+          <div>
+            <div class="bar-label">
+              <span>Suspicious</span>
+              <span id="suspicious-percent">0%</span>
+            </div>
+            <div class="bar-track"><div id="suspicious-bar" class="bar suspicious-bar"></div></div>
+          </div>
+        </div>
+        <ul class="rules-list">
+          <li>High traffic rate from one source IP is flagged.</li>
+          <li>Unknown destination ports are flagged.</li>
+          <li>Packets are labeled as Safe or Suspicious.</li>
+        </ul>
+      </article>
+
+      <article class="table-card">
+        <div class="section-heading">
+          <h2>Packet Logs</h2>
+          <p>Rolling list of the latest 50 analyzed packets</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Source IP</th>
+                <th>Destination IP</th>
+                <th>Protocol</th>
+                <th>Status</th>
+                <th>ML Label</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody id="packet-table-body">
+              <tr>
+                <td colspan="7" class="empty-state">No packets captured yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+
+    <section class="content-grid single-column">
+      <article class="table-card suspicious-panel">
+        <div class="section-heading">
+          <h2>Suspicious Packet Cache</h2>
+          <p>Temporary rolling panel for suspicious packets only</p>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>Source IP</th>
+                <th>Protocol</th>
+                <th>ML Label</th>
+                <th>Confidence</th>
+                <th>Reason</th>
+              </tr>
+            </thead>
+            <tbody id="suspicious-table-body">
+              <tr>
+                <td colspan="6" class="empty-state">No suspicious packets captured yet.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </div>
+
+  <div id="easter-egg-toast" class="easter-egg-toast" aria-live="polite" hidden>
+    Project by Siddhant Singh, CSE 28
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
