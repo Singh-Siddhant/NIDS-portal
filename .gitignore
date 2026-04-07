@@ -11,5 +11,12 @@ data/packets.json
 
 dashboard-full.png
 
+nids_model_hgb.pkl
+nids_model_mlp.pkl
+nids_model_rf.pkl
+models/nids_model_hgb.pkl
+models/nids_model_mlp.pkl
+models/nids_model_rf.pkl
+
 .DS_Store
 Thumbs.db
