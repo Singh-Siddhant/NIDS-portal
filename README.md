@@ -1,7 +1,7 @@
 # NIDS Final
 
 <p align="center">
-  <img src="./screenshots/dashboard-overview.png" alt="NIDS Dashboard Overview" width="100%">
+  <img src="https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-overview.png" alt="NIDS Dashboard Overview" width="100%">
 </p>
 
 <p align="center">
@@ -42,15 +42,15 @@ The system combines:
 
 ### Dashboard Overview
 
-![Dashboard Overview](./screenshots/dashboard-overview.png)
+![Dashboard Overview](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-overview.png)
 
 ### Packet Logs
 
-![Packet Logs](./screenshots/dashboard-packets.png)
+![Packet Logs](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-packets.png)
 
 ### Suspicious Packet Cache
 
-![Suspicious Packet Cache](./screenshots/dashboard-suspicious-panel.png)
+![Suspicious Packet Cache](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-suspicious-panel.png)
 
 ## Highlights
 
