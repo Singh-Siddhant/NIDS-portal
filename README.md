@@ -1,4 +1,4 @@
-# NIDS Final
+# Network Intrusion Detection System (NIDS)
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/dashboard-overview.png" alt="NIDS Dashboard Overview" width="100%">
@@ -19,7 +19,7 @@
 
 ## Overview
 
-`NIDS Final` is a cybersecurity project focused on building a practical **Network Intrusion Detection System** for live traffic monitoring.
+`NIDS` is a cybersecurity project focused on building a practical **Network Intrusion Detection System** for live traffic monitoring.
 
 This project was completed as a **Cybersecurity project task given by Dr. V. Kumar sir, CSE branch, Madan Mohan Malaviya University of Technology, Gorakhpur**.
 
@@ -98,7 +98,7 @@ Platform  : Windows-compatible live capture workflow
 ## Project Structure
 
 ```text
-nids-final/
+NIDS/
 |-- app.py
 |-- backend/
 |   |-- analyzer.py
