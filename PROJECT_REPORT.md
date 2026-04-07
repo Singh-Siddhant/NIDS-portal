@@ -48,15 +48,15 @@ From there, the project was expanded into a more complete system by:
 
 ### Dashboard Overview
 
-![Dashboard Overview](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-overview.png)
+![Dashboard Overview](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/dashboard-overview.png)
 
 ### Recent Packet Logs
 
-![Recent Packet Logs](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-packets.png)
+![Recent Packet Logs](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/dashboard-packets.png)
 
 ### Suspicious Packet Panel
 
-![Suspicious Packet Panel](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/screenshots/dashboard-suspicious-panel.png)
+![Suspicious Packet Panel](https://raw.githubusercontent.com/Singh-Siddhant/NIDS-portal/main/dashboard-suspicious-panel.png)
 
 ## Datasets Used
 
