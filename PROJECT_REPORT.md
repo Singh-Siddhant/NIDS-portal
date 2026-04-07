@@ -48,15 +48,15 @@ From there, the project was expanded into a more complete system by:
 
 ### Dashboard Overview
 
-![Dashboard Overview](dashboard-overview.png)
+![Dashboard Overview](./screenshots/dashboard-overview.png)
 
 ### Recent Packet Logs
 
-![Recent Packet Logs](dashboard-packets.png)
+![Recent Packet Logs](./screenshots/dashboard-packets.png)
 
 ### Suspicious Packet Panel
 
-![Suspicious Packet Panel](dashboard-suspicious-panel.png)
+![Suspicious Packet Panel](./screenshots/dashboard-suspicious-panel.png)
 
 ## Datasets Used
 
