@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+
+.venv/
+venv/
+
+server_out.txt
+server_err.txt
+
+data/packets.json
+
+dashboard-full.png
+
+.DS_Store
+Thumbs.db
